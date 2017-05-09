@@ -91,7 +91,7 @@ if(myValue){
   Note that JavaScript is lazy when it can quit evaluating a boolean expression early. For example, in the last expression above, you can tell from just the first `false &&` that the whole expression will be false.
   </details>
 
-1. Which of the following are truthy values?
+2. Which of the following are truthy values?
   * `"abc"`
   * `""`
   * `1`
@@ -109,17 +109,17 @@ if(myValue){
   truthy: 1, "abc", [], {}, Math.PI, Array, Object      
   </details>
 
-1. What is the outcome of the following expressions?
+3. What is the outcome of the following expressions?
   *  1 && 6
   *  0 || "hi"
   *  ["a","b","c"] || "123"
   *  false || null
 
   <details><summary>answers</summary>
-6
-"hi"
-["a","b","c"]
-null
+    6
+    "hi"
+    ["a","b","c"]
+    null
   </details>
 
 
@@ -470,7 +470,17 @@ while (j < 10) {
 
 Use a `for` or `while` loop to console log a shuttle launch countdown:  "T minus 10", then "9", "8", "7", "6", "5", "4", "3", "2", "1", "0", "Liftoff!".
 
-<details><summary>answer</summary>
+.
+.
+.
+answer
+.
+.
+below
+.
+.
+don't peek!
+
   ```js
   console.log("T minus 10");
   for (var i=9; i>=0; i--){
@@ -488,7 +498,6 @@ Use a `for` or `while` loop to console log a shuttle launch countdown:  "T minus
   }
   console.log("Liftoff!");
   ```
-</details>
 
 
 ### Independent Practice
