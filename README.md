@@ -91,10 +91,13 @@ if(myValue){
   Note that JavaScript is lazy when it can quit evaluating a boolean expression early. For example, in the last expression above, you can tell from just the first `false &&` that the whole expression will be false.
   </details>
 
+<br/>
+
+
 2. Which of the following are truthy values?
-  * `"abc"`
   * `""`
   * `1`
+  * `"abc"`
   * `-0`
   * `Math.PI`
   * `NaN`
@@ -106,8 +109,12 @@ if(myValue){
   * `undefined`
 
   <details><summary>answers</summary>
-  truthy: 1, "abc", [], {}, Math.PI, Array, Object      
+  	<p>truthy: 1, "abc", Math.PI, Array, [], Object, {}   </p>
+	<p>falsy: "" , -0, NaN, null, undefined </p>
   </details>
+  
+  <br/>
+  
 
 3. What is the outcome of the following expressions?
   *  1 && 6
@@ -116,13 +123,13 @@ if(myValue){
   *  false || null
 
   <details><summary>answers</summary>
-    6
-    "hi"
-    ["a","b","c"]
-    null
+    <p>6</p>
+    <p>"hi"</p>
+    <p>["a","b","c"]</p>
+    <p>null</p>
   </details>
 
-
+<br/>
 
 
 ### Conditionals
@@ -308,73 +315,38 @@ Pseudocode or edit the code above to check the following requirements:
 
 1. Add a requirement that riders must be at least 4ft tall.   
   <details><summary>answer</summary>
-    if ( tokens >= 5 && height >= 4) {
-        console.log("Step right up!");
-    } else {
-        console.log("Sorry, you can't ride.");
-    }
+ 	<img src="https://user-images.githubusercontent.com/6520345/27649923-19de770e-5be8-11e7-97ab-f9d6e899feea.png"/>
   </details>
+  <br>
 
 2. Add a requirement that riders must be at least 12 years old.  
   <details><summary>answer</summary>
-  	if ( tokens >= 5 && height >= 4 && age >=12) {
-  	    console.log("Step right up!");
-  	} else {
-  	    console.log("Sorry, you can't ride.");
-  	}
+  	<img src="https://user-images.githubusercontent.com/6520345/27649986-5c2caeaa-5be8-11e7-9e02-2a1179bc2744.png"/>
   </details>
+  <br>
 
 3. Replace the previous rule: now riders under 12 can participate when they're accompanied by an adult.  
 
   <details><summary>answer</summary>
-    if ( tokens >= 5 && height >= 4 ) {
-      if (age >= 12 || hasAdult){
-          console.log("Step right up!");
-      } else {
-        console.log("Sorry, you can't ride.");
-      }
-    } else {
-        console.log("Sorry, you can't ride.");
-    }
+    <img src="https://user-images.githubusercontent.com/6520345/27650019-75660df8-5be8-11e7-993d-a22b5662d08f.png"/>
   </details>
+  <br>
 
 4. (If the boss isn't looking, you can go on in!)  
 
 
   <details><summary>answer</summary>
-    if (!bossLooking){
-  		console.log("Step right up!");
-  	} else {
-  		if ( tokens >= 5 && height >= 4 ) {
-  			if (age >= 12 || hasAdult){
-  			    console.log("Step right up!");
-  			} else {
-  				console.log("Sorry, you can't ride.");
-  			}
-  		} else {
-  		    console.log("Sorry, you can't ride.");
-  		}
-  	}
+    <img src="https://user-images.githubusercontent.com/6520345/27650054-944f583c-5be8-11e7-9da8-6a275089fcef.png"/>
   </details>
+  <br/>
 
-5. Riders with a park pass get in free.
+5. Riders with a park pass get in free - it doesn't cost them 5 tokens.
 
 
   <details><summary>answer</summary>
-    if (!bossLooking){
-  		console.log("Step right up!");
-  	} else {
-  		if ( (tokens >= 5 || hasPass) && height >= 4 ) {
-  			if (age >= 12 || hasAdult){
-  			    console.log("Step right up!");
-  			} else {
-  				console.log("Sorry, you can't ride.");
-  			}
-  		} else {
-  		    console.log("Sorry, you can't ride.");
-  		}
-  	}
+    <img src="https://user-images.githubusercontent.com/6520345/27650082-b06f6890-5be8-11e7-81d3-e7356e96e965.png"/>
   </details>
+  <br/>
 
 
 
