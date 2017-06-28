@@ -12,7 +12,7 @@ Location: SF
 <!-- framing the "why" in big-picture/real world examples -->
 *This workshop is important because:*
 
-"Control flow" refers to the way our computers move through a program's code.   Understanding control flow allows us to trace the flow of a program based on its code. This skill is essential for programming in every language and paradigm.  In particular, **conditionals** and **loops** are fundamental to understanding modern programming languages.
+Every programming language is read and processed by an "interpreter" program. An interpreter reads through the code and translates the characters and symbols to actions at the lowest level of the computer (manipulations of 0's and 1's). "Control flow" refers to the way the interpreter moves through a program's code. Understanding control flow allows us to trace the flow of a program based on its code. This skill is essential for reading code and therefore programming in every language and paradigm.  In particular, **conditionals** and **loops** are fundamental to understanding modern programming languages. We can visualize **conditionals** as "jumps" that help us skip some code and execute other code. We can visualize **loops** as a repeated use of a handful of lines of code.
 
 ### What are the objectives?
 <!-- specific/measurable goal for students to achieve -->
@@ -41,20 +41,9 @@ typeof(true)    // boolean
 typeof(false)   // boolean
 ```
 
-JavaScript blurs this line a bit by using "truthy" and "falsey" values.  The positive effect is that conditionals don't have to be phrased just in terms of boolean values. Downsides are that we have to memorize which values are "falsey," and it can take practice to quickly predict results.
-
-To check whether some value is truthy or falsey, try the following structure in your JavaScript console:
-
-```js
-var myValue = "fishing";
-if(myValue){
-  console.log(myValue, " is truthy!");
-} else {
-  console.log(myValue, " is falsey!");
-}
-```
-
 #### Basic Boolean Operators
+
+**Boolean operators** take in data and return true or false. For a boolean "and" phrase to be true, both values in the phrase must be true. For a boolean "or" phrase to be true, only one of the values in the phrase must be true. 
 
 | English | "and" | "or" | "not" or "bang" | "double bang" |
 | ------------- |:-------------|:-------------|:-------------| :------- |
@@ -62,12 +51,28 @@ if(myValue){
 | e.g. | `a && b` | a  &#124;&#124; b | `!b` | `!!b` |
 | English | A and B | A or B | not B | not NOT B |
 
+
 #### Boolean Comparison Operators
 
 | strict equality | loose equality | not strictly equal | not loosely equal | greater than | less than | greater than or equal to | less than or equal to |
 | ------------- |:-------------|:-------------|:-------------|:-------------|:-------------|:-------------|:-------------|
 | `===` | `==` | `!==` | `!=` | `>` | `<` | `>=` | `<=` |
 
+
+#### Truthy and Falsey
+
+JavaScript blurs boolean logic a bit by using "truthy" and "falsey" values.  The positive effect is that conditionals don't have to be phrased just in terms of boolean values. Downsides are that we have to memorize which values are "falsey," and it can take practice to quickly predict results.
+
+To check whether `someValue` is truthy or falsey, use the following structure in your JavaScript console:
+
+```js
+var someValue = "fishing";
+if(someValue){
+  console.log(someValue, " is truthy!");
+} else {
+  console.log(someValue, " is falsey!");
+}
+```
 
 
 ## Check for Understanding
@@ -133,6 +138,8 @@ if(myValue){
 
 
 ### Conditionals
+
+Conditionals allow us to decide what to do under specific conditions.
 
 ![commuter flow chart](https://camo.githubusercontent.com/f545891799690188cd2d25b1d06687af66627ab1/687474703a2f2f63646e2e746865626f6c646974616c69632e636f6d2f7061706572636c69702f68746d6c5f696d616765732f33353130382f696d616765732f6f726967696e616c2f77696c6c2d796f752d62652d6c6174655f66696e616c2e706e67)
 
@@ -354,9 +361,10 @@ Pseudocode or edit the code above to check the following requirements:
 
 Whenever we want to repeat something in code, we use a loop.  We can think of every loop as three parts: **initialization** (setup), **continue condition**, and **update expression**.
 
+The **initialization** sets up the variables that will make the loop run. A **continue condition** tells the loop whether to go through another repetition. The **update expression** changes some value so that the loop will move forward rather than executing in the exact same way each time. Without an **update expression**, you could find yourself in an infinite loop.
+
 
 #### `while` loops
-
 
 ![endless pizza cartoon](http://38.media.tumblr.com/7d49b42da305f9d6302110c50ac6894e/tumblr_mmz3qo9q1N1rdutw3o1_400.gif)  
 _While pizza is available, take pizza!_
