@@ -479,6 +479,33 @@ don't peek!
   console.log("Liftoff!");
   ```
 
+### Whiteboarding Practice
+
+- Start with `var pets = ['Cat', 'Dog', 'Parrot'];`
+- OUTPUT:
+```js
+1. Cat
+2. Dog
+3. Parrot
+Finished!
+```
+
+- Start with `var favThings = [{name: 'Cookies'}, {name: 'Ice cream'}, {name: 'Puppies'}];`
+- OUTPUT:
+```js
+My favorite things!
+1. Cookies
+2. Ice cream
+3. Puppies
+```
+
+- Start with `var friends = [{name: 'Allie', age: 30}, {name: 'Ben', age: 18}, {name: 'Carl', age: 22}];`
+- OUTPUT: 
+```js
+People over 21: 
+- Allie
+- Carl
+```
 
 ### Independent Practice
 
